@@ -24,7 +24,7 @@ useHead({
 <template>
   <the-header />
 
-  <div class="container mx-auto px-4 py-8 grid grid-cols-[240px_1fr] gap-8">
+  <div class="container mx-auto px-4 py-12 grid grid-cols-[280px_1fr] gap-16">
     <the-nav />
 
     <main>
