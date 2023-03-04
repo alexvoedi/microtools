@@ -16,7 +16,7 @@ const modelValue = useVModel(props, 'modelValue', emits)
 
 <style lang="postcss" scoped>
 textarea {
-  @apply bg-gray-600 text-white px-3 py-1 rounded text-lg resize-none;
+  @apply bg-gray-600 text-white px-3 py-1 rounded text-lg resize-none word-break-all;
 }
 
 textarea:focus {

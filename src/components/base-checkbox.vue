@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const props = defineProps<{
-  modelValue: Array<unknown> | Boolean
-  value: Boolean | Object
+  modelValue: Array<unknown> | boolean
+  value: boolean | object | string
 }>()
 
 const emit = defineEmits<{

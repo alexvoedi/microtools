@@ -27,6 +27,10 @@ const generatePassword = () => {
 onMounted(() => {
   generatePassword()
 })
+
+const copyPassword = () => {
+  navigator.clipboard.writeText(password.value)
+}
 </script>
 
 <template>
@@ -69,10 +73,11 @@ onMounted(() => {
       </base-button>
     </div>
 
-    <base-textarea :model-value="password" readonly class="w-full font-mono" :rows="5" />
+    <div v-tippy="{ content: 'Copied!', trigger: 'click', delay: [null, 1000] }" @click="copyPassword()">
+      <base-textarea :model-value="password" readonly class="w-full font-mono cursor-pointer break-all" :rows="5" />
+    </div>
   </div>
 </template>
 
 <style lang="postcss" scoped>
-
 </style>
