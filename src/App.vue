@@ -2,6 +2,7 @@
 
 <template>
   <router-view />
+  ttt
 </template>
 
 <style lang="postcss"></style>
