@@ -7,10 +7,14 @@
     <header class="container mx-auto px-4 h-20 flex items-center justify-between ">
       <header-brand />
 
-      <div>
-        <router-link :to="{ name: 'home' }" class="transition flex items-center justify-center" hover="text-primary-500">
-          <span class="ico-mdi-home text-xl" />
+      <div class="flex gap-6 text-2xl">
+        <router-link :to="{ name: 'home' }" class="transition flex items-center justify-center" hover="text-primary-600">
+          <span class="ico-mdi-home" />
         </router-link>
+
+        <a href="https://github.com/alexvoedi/microtools" class="transition flex items-center justify-center" hover="text-primary-600">
+          <span class="ico-mdi-github" />
+        </a>
       </div>
     </header>
   </div>
@@ -18,6 +22,6 @@
 
 <style lang="postcss" scoped>
 .router-link-active {
-  @apply text-primary-500
+  @apply text-primary-600
 }
 </style>

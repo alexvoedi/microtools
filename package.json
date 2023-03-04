@@ -1,23 +1,30 @@
 {
-  "name": "",
+  "name": "@alexvoedi/microtools",
   "version": "0.2.0",
-  "private": true,
-  "description": "",
+  "private": false,
+  "description": "a collection of tiny helpers",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Alexander Vödisch",
+    "email": "voedisch.alexander@gmail.com"
   },
   "license": "UNLICENSED",
-  "homepage": "",
+  "homepage": "https://alexvoedi.github.io/microtools/",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/alexvoedi/microtools"
   },
   "bugs": {
-    "url": "",
-    "email": ""
+    "url": "https://github.com/alexvoedi/microtools"
   },
-  "keywords": [],
+  "keywords": [
+    "vue",
+    "vite",
+    "typescript",
+    "unocss",
+    "helpers",
+    "tools",
+    "utils"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "cross-env NODE_ENV=production vite build",
