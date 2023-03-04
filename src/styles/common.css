@@ -1,0 +1,3 @@
+.heading {
+  @apply text-5xl font-700 font-head tracking-tight pb-8;
+}

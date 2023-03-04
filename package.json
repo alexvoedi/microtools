@@ -26,6 +26,8 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@fontsource/atkinson-hyperlegible": "^4.5.11",
+    "@fontsource/montserrat": "^4.5.14",
     "@vueuse/core": "^9.13.0",
     "@vueuse/head": "^1.1.15",
     "pinia": "^2.0.32",
