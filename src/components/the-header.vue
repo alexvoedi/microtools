@@ -8,14 +8,16 @@
       <header-brand />
 
       <div>
-        <router-link :to="{ name: 'home' }" class="text-xl">
-          <span class="ico-mdi-home" />
+        <router-link :to="{ name: 'home' }" class="transition flex items-center justify-center" hover="text-primary-500">
+          <span class="ico-mdi-home text-xl" />
         </router-link>
       </div>
     </header>
   </div>
 </template>
 
-<style>
-
+<style lang="postcss" scoped>
+.router-link-active {
+  @apply text-primary-500
+}
 </style>

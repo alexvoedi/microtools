@@ -42,37 +42,37 @@ onMounted(() => {
     </label>
 
     <div class="flex gap-8 items-center">
-      <label>
-        <input v-model="symbols" type="checkbox" value="lowercase">
-        <span>Lowercase</span>
+      <label class="flex items-center gap-2">
+        <base-checkbox v-model="symbols" value="lowercase" />
+        <span class="text-lg">Lowercase</span>
       </label>
 
-      <label>
-        <input v-model="symbols" type="checkbox" value="uppercase">
-        <span>Uppercase</span>
+      <label class="flex items-center gap-2">
+        <base-checkbox v-model="symbols" value="uppercase" />
+        <span class="text-lg">Uppercase</span>
       </label>
 
-      <label>
-        <input v-model="symbols" type="checkbox" value="numbers">
-        <span>Numbers</span>
+      <label class="flex items-center gap-2">
+        <base-checkbox v-model="symbols" value="numbers" />
+        <span class="text-lg">Numbers</span>
       </label>
 
-      <label>
-        <input v-model="symbols" type="checkbox" value="symbols">
-        <span>Symbols</span>
+      <label class="flex items-center gap-2">
+        <base-checkbox v-model="symbols" value="symbols" />
+        <span class="text-lg">Symbols</span>
       </label>
     </div>
 
     <div>
-      <button class="btn btn-primary" @click="generatePassword">
+      <base-button @click="generatePassword()">
         Generate Password
-      </button>
+      </base-button>
     </div>
 
     <base-textarea :model-value="password" readonly class="w-full font-mono" :rows="5" />
   </div>
 </template>
 
-<style>
+<style lang="postcss" scoped>
 
 </style>

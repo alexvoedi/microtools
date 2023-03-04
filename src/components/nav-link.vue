@@ -12,7 +12,7 @@ defineProps<{
   </router-link>
 </template>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .router-link-active {
   @apply text-primary-500
 }

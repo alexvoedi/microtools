@@ -1,4 +1,25 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: 'microtools',
+  meta: [
+    { name: 'description', content: 'A collection of little helpers' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { name: 'og:title', content: 'microtools' },
+    { name: 'og:description', content: 'A collection of micro tools' },
+    { name: 'og:image', content: '' },
+    { name: 'og:url', content: 'https://alexvoedi.dev/microtools/' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@alexvoedi' },
+    { name: 'twitter:creator', content: '@alexvoedi' },
+    { name: 'twitter:title', content: 'microtools' },
+    { name: 'twitter:description', content: 'A collection of little helpers' },
+    { name: 'twitter:image', content: '' },
+  ],
+  link: [
+    { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+  ],
+})
+</script>
 
 <template>
   <the-header />

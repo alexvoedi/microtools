@@ -9,6 +9,8 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    BaseButton: typeof import('./../components/base-button.vue')['default']
+    BaseCheckbox: typeof import('./../components/base-checkbox.vue')['default']
     BaseInput: typeof import('./../components/base-input.vue')['default']
     BaseNumberInput: typeof import('./../components/base-number-input.vue')['default']
     BaseSlider: typeof import('./../components/base-slider.vue')['default']

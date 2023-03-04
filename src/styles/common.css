@@ -1,3 +1,7 @@
 .heading {
   @apply text-5xl font-700 font-head tracking-tight pb-8;
 }
+
+.text-link {
+  @apply underline hover:text-primary-600 transition;
+}
