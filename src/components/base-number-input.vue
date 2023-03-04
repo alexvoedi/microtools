@@ -23,7 +23,7 @@ const modelValue = useVModel(props, 'modelValue', emits)
 
 <style lang="postcss" scoped>
 input[type="number"] {
-  @apply bg-gray-600 text-white px-3 py-1 rounded text-lg;
+  @apply bg-gray-600 text-white px-3 py-2 rounded;
 }
 
 input[type="number"]:focus {

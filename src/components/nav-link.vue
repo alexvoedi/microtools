@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <router-link :to="to" class="transition" hover="text-primary-500">
+  <router-link :to="to" class="transition text-gray-100" hover="text-primary-500">
     <slot />
   </router-link>
 </template>
