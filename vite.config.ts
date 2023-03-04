@@ -9,13 +9,13 @@ import Inspect from 'vite-plugin-inspect'
 import { VueUseComponentsResolver } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig({
+  base: '/microtools/',
+
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
   },
-
-  base: '/microtools/',
 
   plugins: [
     Vue(),
