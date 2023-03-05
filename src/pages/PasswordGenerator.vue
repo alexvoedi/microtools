@@ -68,7 +68,7 @@ const copyPassword = () => {
     </div>
 
     <div>
-      <base-button @click="generatePassword()">
+      <base-button aria-label="generate password" @click="generatePassword()">
         Generate Password
       </base-button>
     </div>

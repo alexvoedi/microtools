@@ -23,7 +23,7 @@ const clear = () => {
       <slot name="icon" />
     </span>
     <input v-model="modelValue" type="text" :placeholder="placeholder" :autofocus="autofocus">
-    <button v-if="clearable" @click="clear()">
+    <button v-if="clearable" aria-label="clear input" @click="clear()">
       <span class="ico-mdi-close text-xl" />
     </button>
   </div>

@@ -8,11 +8,11 @@
       <header-brand />
 
       <div class="flex gap-6 text-2xl">
-        <router-link :to="{ name: 'home' }" class="transition flex items-center justify-center" hover="text-primary-600">
+        <router-link :to="{ name: 'home' }" class="transition flex items-center justify-center" hover="text-primary-600" aria-label="home">
           <span class="ico-mdi-home" />
         </router-link>
 
-        <a href="https://github.com/alexvoedi/microtools" class="transition flex items-center justify-center" hover="text-primary-600">
+        <a href="https://github.com/alexvoedi/microtools" class="transition flex items-center justify-center" hover="text-primary-600" aria-label="github">
           <span class="ico-mdi-github" />
         </a>
       </div>
