@@ -39,7 +39,7 @@ textarea:focus:not(:read-only) {
   @apply ring-2 ring-2 ring-primary-700;
 }
 
-.wrapper:hover button {
+.wrapper:hover button, .wrapper:focus-within button {
   @apply opacity-100;
 }
 </style>
