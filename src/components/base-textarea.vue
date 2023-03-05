@@ -3,6 +3,7 @@ const props = defineProps<{
   modelValue: string
   rows?: number
   copyable?: boolean
+  readonly?: boolean
 }>()
 
 const emits = defineEmits<{
@@ -18,7 +19,7 @@ const copy = () => {
 
 <template>
   <div class="relative wrapper">
-    <textarea v-model="modelValue" :rows="rows" />
+    <textarea v-model="modelValue" :rows="rows" :readonly="readonly" />
     <button v-if="copyable" v-tippy="{ content: 'Copied!', trigger: 'click', delay: [null, 1000] }" class="absolute top-2 right-3 opacity-0 transition" @click="copy()">
       <span class="ico-mdi-clipboard text-xl text-gray-300 transition" hover="text-white" />
     </button>
